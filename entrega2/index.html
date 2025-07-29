@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunalu</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <aside>
+            <header>
+                <h1 class="logo">Lunalu</h1>
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li><button class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i>Todos los productos</button></li>
+                    <li><button class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>Difusor de Pared</button></li>
+                    <li><button class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>Espejo Saturno</button></li>
+                    <li><button class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>Velador Neptuno</button></li>
+                    <li><button class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>Velador Nórdico</button></li>
+                    <li><a class="boton-menu boton-carrito" href="carrito.html">Carrito <span class="numerito">0</span></a></li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="footer">© Lunalu</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="titulo-principal">Todos los productos</h2>
+            <div class="contenedor-productos"> 
+                <div class="producto" id="producto1">
+                    <img class="producto-imagen" src="./img/difusor1.jpeg" alt="Difusor de Pared">
+                    <div class="producto-detalles">
+                        <h3 class="producto-titulo">Difusor de Pared</h3>
+                        <p class="producto-precio">$30.000</p>
+                        <button class="producto-agregar">Agregar</button>
+                    </div>
+                </div>
+                <div class="producto" id="producto2">
+                    <img class="producto-imagen" src="./img/espejosaturno.jpeg" alt="Espejo Saturno">
+                    <div class="producto-detalles">
+                        <h3 class="producto-titulo">Espejo Saturno</h3>
+                        <p class="producto-precio">$48.000</p>
+                        <button class="producto-agregar">Agregar</button>
+                    </div>
+                </div>
+                <div class="producto" id="producto3">
+                    <img class="producto-imagen" src="./img/veladorneptuno.jpeg" alt="Velador Neptuno">
+                    <div class="producto-detalles">
+                        <h3 class="producto-titulo">Velador Neptuno</h3>
+                        <p class="producto-precio">$45.000</p>
+                        <button class="producto-agregar">Agregar</button>
+                    </div>
+                </div>
+                <div class="producto" id="producto4">
+                    <img class="producto-imagen" src="./img/veladornodico.jpg" alt="Velador Nórdico">
+                    <div class="producto-detalles">
+                        <h3 class="producto-titulo">Velador Nórdico</h3>
+                        <p class="producto-precio">$45.000</p>
+                        <button class="producto-agregar">Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+     <script defer src="script.js"></script>
+</body>
+</html>

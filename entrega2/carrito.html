@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <aside>
+            <header>
+                <h1 class="logo">Lunalu</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="boton-menu boton-volver" href="./index.html">
+                            <i class="bi bi-arrow-left"></i> Seguir Comprando
+                        </a>                    
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-carrito active" href="carrito.html">Carrito</a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="footer">© Lunalu</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="titulo-principal">Carrito</h2>
+            <div class="contenedor-carrito">
+                <p class="carrito-vacio">Tu carrito está vacío</p>
+
+                <div class="carrito-producto">
+                    <img class="carrito-producto-imagen" src="./img/difusor1.jpeg" alt="Difusor">
+                    <div class="carrito-producto-titulo">
+                        <small>Título</small>
+                        <h3>Difusor de Pared</h3>
+                    </div>
+                    <div class="carrito-producto-cantidad">
+                        <small>Cantidad</small>
+                        <p>2</p>
+                    </div>
+                    <div class="carrito-producto-precio">
+                        <small>Precio</small>
+                        <p>$30.000</p>
+                    </div>
+                    <div class="carrito-producto-subtotal">
+                        <small>Subtotal</small>
+                        <p>$60.000</p>
+                    </div>
+                    <button class="carrito-producto-eliminar"><i class="bi bi-trash"></i></button>
+                </div>
+            </div>
+
+            <div class="carrito-acciones">
+                <div class="carrito-acciones-izquierda">
+                    <button class="carrito-acciones-vaciar">Vaciar carrito</button>
+                </div>
+                <div class="carrito-acciones-derecha">
+                    <div class="carrito-acciones-total">
+                        <p>Total</p>
+                        <p id="total">$60.000</p>
+                    </div>
+                    <button class="carrito-acciones-comprar">Comprar ahora</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script defer src="script.js"></script>
+</body>
+</html>

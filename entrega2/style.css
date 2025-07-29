@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: rgb(237, 214, 185);
+}
+
+aside {
+    padding: 2rem;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: 400;
+    font-size: 1.3em;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.boton-menu {
+    background-color: transparent;
+    border: 0;
+    color: rgb(114, 12, 114);
+    font-size: .85rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+.boton-menu.active {
+    background-color: white;
+    color: rgb(96, 4, 96);
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    position: relative;
+}
+
+.bi-hand-index-thumb-fill,
+.bi-hand-index-thumb {
+    transform: rotateZ(90deg);
+}
+
+.boton-menu::before,
+.boton-menu::after {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 2rem;
+    right: 0;
+    background-color: transparent;
+    box-shadow: 0 1rem 0 rgb(236, 233, 233);
+}
+
+.boton-menu::after {
+    top: 100%;
+    border-top-right-radius: .5rem;
+    box-shadow: 0 -1rem 0 (147, 23, 23);
+}
+
+.boton-menu::before {
+    bottom: 100%;
+    border-bottom-right-radius: .5rem;
+}
+
+.boton-carrito {
+    margin-top: 2rem;
+}
+
+main {
+    background-color: white;
+    margin: 1rem;
+    margin-left: 0;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.titulo-principal {
+    color: rgb(17, 20, 19);
+}
+
+.contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.producto-imagen {
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+.producto-detalles {
+    background-color: rgb(245, 234, 201);
+    color: rgb(16, 4, 4);
+    padding: .5rem;
+    border-radius: 1rem;
+    margin-top: -2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.producto-titulo {
+    font-size: 1rem;
+}
+
+.producto-agregar {
+    border: 0;
+    background-color: rgb(243, 239, 239);
+    color: rgb(11, 4, 1);
+    padding: .25rem;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    cursor: pointer;
+    border: 2px solid;
+    transition: background-color .5s, color .5s;
+}
+
+.producto-agregar:hover {
+    background-color: rgb(229, 223, 223);
+    color: rgb(209, 68, 7);
+}
+
+/* Carrito */
+.carrito-producto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: #e5e5e5;
+    color: #333;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+.producto.seleccionado {
+    outline: 3px ;
+    transform: scale(1.05);
+    transition: 0.3s;
+
+
+
+}
+.producto {
+  transition: transform 0.3s ease;
+}
+
+
+.carrito-producto-imagen {
+    width: 4rem;
+    border-radius: 1rem;
+}
+.producto-imagen {
+    width: 100%;
+    height: 400px; 
+    object-fit: cover;
+    border-radius: 1rem;
+}
